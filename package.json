@@ -4,16 +4,21 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "npx vite",
-    "dev": "vite",
+    "vite": "vite",
+    "server": "nodemon server.cjs",
+    "dev": "concurrently \"npm:server\" \"npm:vite\"",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "serve -s dist",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.16.0"
+    "react-router-dom": "^6.16.0",
+    "serve": "^14.2.1",
+    "vite": "^4.4.9"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
@@ -22,8 +27,7 @@
     "eslint": "^8.38.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.3.4",
-    "vite": "^4.4.9"
+    "eslint-plugin-react-refresh": "^0.3.4"
   },
   "engines": {
     "node": "18.x"
