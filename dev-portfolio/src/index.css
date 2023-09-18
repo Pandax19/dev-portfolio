@@ -1,0 +1,382 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: black;
+  background-image: url(./assets/images/plants.jpg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: black;
+  opacity: 20%;
+  text-decoration: inherit;
+}
+
+
+body {
+  margin: 100;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: black;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: black;
+    background-color: black;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: black;
+    opacity:50;
+
+  }
+}
+
+main {
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 50px 30px;
+}
+:root {
+  --primary: white;
+  --secondary: #31343D;
+  --light: white;
+  --dark: black;
+  --darker: rgba(74, 75, 74, 0.323);
+  --alpha: black;
+  --spacing-one: calc(1rem * 0.5);
+  --spacing-two: calc(1rem);
+  --spacing-five: calc(2.5rem);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  background: var(--darker);
+  color: var(--light);
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Aladin', cursive;
+  font-weight: 500;
+  margin: 5px 0;
+  line-height: 1.25;
+  color: white;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 50px 20px;
+  text-shadow: 5px 5px 10px rgba(3, 55, 22, 0.5);
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin: 20px 0;
+  line-height: 2rem;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+  opacity: 5;
+}
+
+a:hover {
+  opacity: 1;
+  transition: all .2s ease-in-out;
+}
+
+header {
+  background-image:('./assets/images/plants.jpg');
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+
+}
+
+header a {
+  color: var(--light);
+}
+
+button {
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  border: none;
+  color: black;
+  outline: none;
+  cursor: pointer;
+  margin: 0 1px;
+  background-color: var(--dark);
+  padding: 10px 15px;
+  opacity: 0.7;
+}
+
+
+button:hover {
+  opacity: 1;
+}
+
+button[disabled] {
+  cursor: default;
+  opacity: 0.8;
+}
+
+span[role='img'] {
+  cursor: default;
+}
+
+form {
+  width: 40%;
+}
+
+input {
+  margin: 10px 0;
+  font-size: 1rem;
+  padding: 0.25rem;
+  width: 600px;
+  border: 1px solid var(--dark);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+}
+
+
+label {
+  margin-right: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+header h1 {
+  position: relative;
+  z-index: 2;
+}
+
+header img {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  filter: opacity(100%);
+  /* opacity: 100; */
+}
+
+nav {
+  position: relative;
+  font-family: 'Aladin', cursive;
+  font-size: 2.5rem;
+  margin: 30px 20px;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav li {
+  cursor: pointer;
+  text-shadow: 2px 2px 10px rgba(0,0,0, 0.5);
+  margin: 0 50px;
+}
+
+footer {
+  font-size: 48px;
+  justify-content: center;
+}
+
+footer a {
+  color: var(--light);
+  opacity: .5;
+  margin: 10px 20px;
+  transition: all .3s ease-in-out;
+}
+
+footer a:hover {
+  opacity: 1;
+}
+
+textarea {
+  width: 600px;
+  height: 200px;
+  border: 3px solid black;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+/* .container {
+  width: 85%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.card {
+  width: 50%;
+  text-align: center;
+  
+}
+
+.project {
+  display: flex;
+  position: relative;
+  max-width: 60%;
+  margin: 20px;
+}
+
+.project-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.project-text {
+    color: var(--secondary);
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    left: 40px;
+    right: 0px;
+    padding: 10px;
+    opacity: 80%;
+    transition: all .5s ease-in-out;
+}
+
+
+.project-text:hover {
+  background-color: var(--alpha);
+  opacity: 1;
+  border: 10px solid var(--secondary);
+}
+
+.project-text a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--dark);
+  transition: all .3s ease-in-out;
+  width: 100%;
+}
+
+.project-text a:hover {
+  color: var(--darker);
+}
+
+/* .navActive {
+  color: var(--secondary);
+  cursor: default;
+  text-shadow: 3px 3px 15px rgba(255,255,255, .5);
+} */
+
+@media only screen and (max-width: 1300px) {
+  nav {
+    position: static;
+    display: block;
+    z-index: 100;
+    margin: 0 10px;
+    font-size: 2rem;
+  }
+  header h1 {
+    display: block;
+    height: 30px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  nav {
+    position: static;
+    display: block;
+    z-index: 100;
+    margin: 0 10px;
+    font-size: 1.3rem;
+  }
+  header h1 {
+    display: block;
+    margin: 5px 10px;
+    height: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 2.3rem;
+ }
+}
+
+.navBar{
+  padding: 5px;
+  top:5px;
+}
