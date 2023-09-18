@@ -2,11 +2,11 @@
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
-import Error from '../src/Components/Error/index';
-import About from '../src/Components/About/index';
-import Contact from '../src/Components/Contact/index';
-import Portfolio from '../src/Components/Portfolio/index';
-import Resume from '../src/Components/Resume/index'
+import Error from './Components/Error/index';
+import About from './Components/About/index';
+import Contact from './Components/Contact/index';
+import Portfolio from './Components/Portfolio/index';
+import Resume from './Components/Resume/index'
 import './index.css';
 
 
